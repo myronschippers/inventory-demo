@@ -1,0 +1,19 @@
+{
+  "name": "inventory-demo",
+  "version": "1.0.0",
+  "description": "Demo execisze in fullstack JS development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myronschippers/inventory-demo.git"
+  },
+  "author": "Myron R Schippers Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myronschippers/inventory-demo/issues"
+  },
+  "homepage": "https://github.com/myronschippers/inventory-demo#readme"
+}
