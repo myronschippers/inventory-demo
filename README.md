@@ -4,8 +4,9 @@ This a practice application using the concept of inventory management to practic
 
 ## Dependencies
 
-- Node
-- Express
+- [Node](https://nodejs.org/en)
+- [Express](https://expressjs.com/)
+- [PostgreSQL](https://www.postgresql.org/)
 
 ## Getting Started
 
