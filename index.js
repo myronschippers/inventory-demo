@@ -1,7 +1,10 @@
-console.log('Hello World');
+// node web app framework
+const express = require('express');
+// instantiate server app
+const app = express();
 
-function sayMyName() {
-  console.log('Oh Baby!!!!');
-}
+app.get('/', (req, res) => {
+  res.send('Hello World!!!');
+});
 
-sayMyName();
+app.listen(8080);
