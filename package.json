@@ -1,9 +1,10 @@
 {
   "name": "inventory-demo",
   "version": "1.0.0",
-  "description": "Demo execisze in fullstack JS development",
+  "description": "Demo exercise in fullstack JS development",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
