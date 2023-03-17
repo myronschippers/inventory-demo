@@ -14,6 +14,9 @@ app.get('/', (req, res) => {
 // U: Update => put
 // D: Delete => delete
 
+// Make full '/inventory' route
+const inventory = [{ name: '' }];
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });
