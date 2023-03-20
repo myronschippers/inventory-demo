@@ -1,5 +1,6 @@
 // node web app framework
 const express = require('express');
+const bodyParser = require('body-parser');
 // instantiate server app
 const app = express();
 const PORT = 8080;
@@ -26,6 +27,11 @@ const INVENTORY = [
   },
 ];
 
+// MIDDLEWARE
+app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/json
+app.use(bodyParser.json());
+
 app.get('/', (req, res) => {
   res.send('Hello World!!!');
 });
@@ -44,6 +50,18 @@ app.get('/inventory', (req, res) => {
 // thought experiment LAST ITEM
 app.get('/inventory/last-item', (req, res) => {
   res.send(INVENTORY[INVENTORY.length - 1]);
+});
+
+app.post('/inventory', (req, res) => {
+  try {
+    const newInventory = req.body;
+
+    INVENTORY.push(newInventory);
+  } catch (err) {
+    res.sendStatus(500);
+  }
+
+  res.sendStatus(201);
 });
 
 app.listen(PORT, () => {
