@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
+import { Home } from 'components/pages/Home';
+
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const routerConfig = createBrowserRouter([
   {
     text: 'Home',
     path: '/',
-    element: <div>Hello world!</div>,
+    element: <Home />,
   },
 ]);
 
