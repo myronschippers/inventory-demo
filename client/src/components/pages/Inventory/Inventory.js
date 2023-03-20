@@ -1,7 +1,7 @@
 import React from 'react';
 import { MainLayout } from 'components/templates/MainLayout';
 
-const Home = () => {
+const Inventory = () => {
   return (
     <MainLayout>
       <h1>Inventory</h1>
@@ -10,4 +10,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Inventory;

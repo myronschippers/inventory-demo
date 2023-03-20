@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import { Home } from 'components/pages/Home';
 import { Inventory } from 'components/pages/Inventory';
+import { AddInventory } from 'components/pages/AddInventory';
 
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -18,6 +19,11 @@ const routerConfig = createBrowserRouter([
     text: 'Inventory',
     path: '/inventory',
     element: <Inventory />,
+  },
+  {
+    text: 'Add Inventory',
+    path: '/add-inventory',
+    element: <AddInventory />,
   },
 ]);
 
