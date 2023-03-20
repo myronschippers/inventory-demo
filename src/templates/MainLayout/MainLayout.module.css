@@ -1,9 +1,0 @@
-.mainLayout {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-
-.mainLayoutBody {
-  padding: 0 40px;
-}
