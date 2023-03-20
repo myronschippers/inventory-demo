@@ -6,6 +6,8 @@ import { Home } from 'components/pages/Home';
 import { Inventory } from 'components/pages/Inventory';
 import { AddInventory } from 'components/pages/AddInventory';
 import { RemoveInventory } from 'components/pages/RemoveInventory';
+import { ErrorPage } from 'components/pages/ErrorPage';
+import { Root } from 'components/pages/Root';
 
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -14,22 +16,26 @@ const routerConfig = createBrowserRouter([
   {
     text: 'Home',
     path: '/',
-    element: <Home />,
-  },
-  {
-    text: 'Inventory',
-    path: '/inventory',
-    element: <Inventory />,
-  },
-  {
-    text: 'Add Inventory',
-    path: '/add-inventory',
-    element: <AddInventory />,
-  },
-  {
-    text: 'Remove Inventory',
-    path: '/remove-inventory',
-    element: <RemoveInventory />,
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      { index: true, element: <Home /> },
+      {
+        text: 'Inventory',
+        path: 'inventory',
+        element: <Inventory />,
+      },
+      {
+        text: 'Add Inventory',
+        path: 'add-inventory',
+        element: <AddInventory />,
+      },
+      {
+        text: 'Remove Inventory',
+        path: 'remove-inventory',
+        element: <RemoveInventory />,
+      },
+    ],
   },
 ]);
 

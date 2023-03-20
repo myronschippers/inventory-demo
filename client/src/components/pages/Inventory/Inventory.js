@@ -1,12 +1,11 @@
 import React from 'react';
-import { MainLayout } from 'components/templates/MainLayout';
 
 const Inventory = () => {
   return (
-    <MainLayout>
+    <div>
       <h1>Inventory</h1>
       <p>A list of current inventory status.</p>
-    </MainLayout>
+    </div>
   );
 };
 
