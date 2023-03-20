@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import { Home } from 'components/pages/Home';
+import { Inventory } from 'components/pages/Inventory';
 
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -12,6 +13,11 @@ const routerConfig = createBrowserRouter([
     text: 'Home',
     path: '/',
     element: <Home />,
+  },
+  {
+    text: 'Inventory',
+    path: '/inventory',
+    element: <Inventory />,
   },
 ]);
 
